@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" charset="utf-8">
+	<title>frist project</title>
+	<!--bootstrap核心css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css"> -->
+	<!-- 引入jq文件 -->
+	<script type="text/javascript" src="js/jquery-3.1.1.slim.min.js"></script>
+	<!-- 引入核心bootstrap的js -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
+	</head>
+<body>
+<!-- 定义一个主体的背景（居中使对移动设备友好） -->
+
+<header>
+<div class="container">
+	<div class="raw">
+		<div class="col-sm-5 col-xs-12"><img style="" src="img/1.jpg" alt="请稍等片刻"></div>
+		<div class="col-sm-7 col-xs-12" style="padding: 5% 0;">
+			<!-- <form class="navbar-form" role="serch">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="请输入关键字进行站内搜索">
+				</div>
+				<button type="submit" class="btn btn-default">搜索</button>
+			</form>  失败的原因是因为这个组件太短样式失败  不需要用导航条组组件  使用输入框组件-->
+			<form id="frmSeach" action="#">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="请输入关键字进行站内搜索">
+				<span class="input-group-btn">
+					<input type="submit" class="btn btn-default" value="搜索">
+				</span>
+			</div>
+			</form>
+
+
+		</div>
+	</div>	
+</div>
+</header>
+
+
+<!-- 导航开始 -->
+
+
+<div class="navbar navbar-default" role="navigation"><!-- role属性方便残障认识 -->
+	
+	<div class="container">
+		
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+
+	
+		<div class="collapse navbar-collapse" >
+		<ul class="nav navbar-nav">
+
+			<li><a href="#">首页</a></li>
+
+			<li class="dropdown"><a href="#" class="dropdown-toptoggle" data-toggle="dropdown">学院概况<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">学院领导</a></li>
+					<li><a href="#">学院领导</a></li>
+					<li><a href="#">学院领导</a></li>
+					<li><a href="#">学院领导</a></li>
+				</ul>
+			</li>
+
+			<li class="dropdown"><a class="dropdown-toptoggle" data-toggle="dropdown" href="#">学院概况<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">hdfs</a></li>
+					<li><a href="#">hdfs</a></li>
+					<li><a href="#">hdfs</a></li>
+					<li><a href="#">hdfs</a></li>
+				</ul>
+			</li>
+
+			<li class="dropdown"><a class="dropdown-toptoggle" data-toggle="dropdown" href="#">教育教学<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">ghfkd</a></li>
+					<li><a href="#">ghfkd</a></li>
+					<li><a href="#">ghfkd</a></li>
+					<li><a href="#">ghfkd</a></li>
+				</ul>
+			</li>
+
+			<li class="dropdown"><a class="dropdown-toptoggle" data-toggle="dropdown" href="#">科学研究</a>
+				<ul class="dropdown-menu">
+					<li><a href="#">fhjds</a></li>
+					<li><a href="#">fhjds</a></li>
+					<li><a href="#">fhjds</a></li>
+					<li><a href="#">fhjds</a></li>
+				</ul>
+			</li>
+		</ul>
+
+	</div>
+	</div>
+</div>
+</div>
+<!-- 导航结束 -->
+
+
+
+<div class="container">
+	<div class="row">
+		<!-- 文字列表区域开始 -->
+		<div class="col-xs-4 col-sm-4">    
+			<!-- 列表容器 -->
+			<div class="panel panel-primary">  
+			<!-- 列表容器头部 -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a href="" style="float:right;">更多...</a>
+					<span class="glyphicon glyphicon-volume-up"></span>&nbsp;&nbsp;通知公告
+				</h3>
+			</div>
+
+				<!-- 列表内容开始 -->
+				<ul class="list-group">
+
+					<li class="list-group-item">
+						<a href="#" target="_blank">通知文件公告</a>
+					</li>
+					<li class="list-group-item" style="white-space: nowrap;overflow: hidden;">
+						<a href="#" target="_blank">通知文件公告bhhuugu</a>
+					</li>
+						<li class="list-group-item">
+						<a href="#" target="_blank">通知文件公告</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+
+
+		<!-- 图片轮播图 -->
+		<div class="col-xs-5 col-sm-5">
+		<!-- 定义轮播图的容器 -->
+		<div id="carousel-news" class="carousel slide" data-ride="carousel">
+
+		<div class="carousel-inner" role="lisbox">
+		<!-- 第一张轮播图的样式 -->
+			<div class="item active">
+				<img src="img/news1.jpg" alt="等待开始"> 
+				<div class="carousel-caption" contenteditable="true">
+					<h4>新闻标题</h4>
+					<p>新闻内容的介绍</p>
+				</div>
+		 	</div>
+		<!-- 后续的轮播图 -->
+		<div class="item">
+			<img src="img/news2.jpg">
+			<div class="carousel-caption" contenteditable="ture">
+				<h4>新闻标题</h4>
+				<p>新闻内容</p>
+			</div>
+		</div>
+		</div>
+
+		<!-- 定义园圈指示圈 -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-news" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-news" data-slide-to="1"></li>
+			<li data-target="#carousel-news" data-slide-to="2"></li>
+		</ol>
+		<!-- 定义左右的按钮</div>	 -->
+		<a href="carousel-news" role="button" class="left carousel-control" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			<span class="sr-only">?</span>
+		</a>
+		<a href="carousel-news" role="button" class="right carousel-control" data-slide="next">
+			 <span class="glyphicon glyphicon-chevron-right"></span>
+			 <span class="sr-only">next</span>
+		</a>
+
+		</div>
+		</div>
+
+
+
+
+
+
+
+		<!-- 前台用户登录 -->
+		<div class="col-xs-3 col-sm-3">
+		<div class="panel panel-primary">
+
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;用户登录
+				</h3>
+			</div>
+
+			<div class="panel-body">
+				<form class="form-horizontal" role="form">
+					<p>
+						<input type="text" class="form-control" placeholder="用户名/手机号/账号信息">
+					</p>
+					<p>
+						<input type="text" class="form-control" placeholder="密码">
+					</p>
+					<p>
+						<label class="checkbox-inline">
+							<input type="checkbox">十天之内免登录
+						</label>
+					</p>
+					<p>
+						<input type="button" class="btn btn-success" value="登录">
+						<input type="button" class="btn btn-default" value="注册" data-toggle="modal" data-target="#user"> <!-- 可以直接添加herf属性 直接带点击触发独立页面 -->
+					</p>
+
+				</form>
+			</div>
+		</div>
+
+		</div>
+	<!-- 第一列结束 -->	
+	</div>
+
+
+
+
+	<div class="row">
+		<!-- 资讯列表 -->
+		<div class="col-xs-12 col-sm-4">
+
+			<div class="panel panel-primary">
+
+				<div class="panel panel-heading">
+					<h3 class="panel-title">资讯类表</h3>
+				</div>
+
+				<div class="panel panel-body">
+					<ul>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 视频播放 -->
+		<div class="col-xs-12 col-sm-4">
+			<!-- <video id="video" src="v1.mp4" width="100%">
+				可能不支持video
+			</video> --> <!-- 方法一h5直接进行视频属性书写 -->
+
+			<!-- 第二种是使用ckplayer插件进行播放 -->
+
+
+		</div>
+
+
+		<!-- 选项卡组件的展示 -->
+		<div class="col-xs-12 col-sm-4">
+			<div class="panel panel-primary">
+
+				<ul class="nav nav-tabs" id="tab_ul">
+					<li class="active">
+						<a href="#qw" id="er" data-toggle="tab">
+							<span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;招生信息
+						</a>
+					</li>
+
+					<li>
+						<a href="#as" id="df" data-toggle="tab">
+							<span class="glyphicon glyphicon-bullhorn"></span>&nbsp;&nbsp;
+							就业信息
+						</a>
+					</li>
+				</ul>
+
+				<div class="tab_content">
+					<div class="tab-pane fade in active" id="qw">
+						<a href="#" class="list-group-item">的是把饭盒</a>
+						<a href="#" class="list-group-item">的是把饭盒</a>
+						<a href="#" class="list-group-item">的是把饭盒</a>
+						<a href="#" class="list-group-item">的是把饭盒</a>
+					</div>	
+					<div class="tab-pane fade in active" id="as">
+						<a href="#" class="list-group-item">分段式结构</a>
+						<a href="#" class="list-group-item">就一听</a>
+						<a href="#" class="list-group-item">我的水是一个大和</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	<!-- 选项卡展示结束 -->
+	</div>
+
+
+	<div class="row">
+	<!-- 图文列表的制作方法 -->
+		<div class="col-xs-12 col-sm-9">
+			<div class="panel panel-primary">
+
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<a href="#" style="float: right;">更多。。。</a>
+						<span class="glyphicon volume-picture"></span>&nbsp;&nbsp;校园文化
+					</h3>
+				</div>
+
+				<div class="panel-body">
+					<div class="media">
+						<a href="#" class="pull-left">
+							<img src="img/news1" class="media-object img-thumbnail img-response" alt="...">
+						</a>
+
+						<div class="media-body">
+							<h4 class="modal-heading">
+								<a href="#">标题文字</a>
+							</h4>
+							<p>倒海翻江皮哦啊</p>
+							<p>符合版规</p>
+						</div>
+
+					</div>
+				</div>
+
+
+			</div>	
+		</div>
+
+		<!-- 图文列表结束 -->
+
+
+
+
+
+		<!-- 快捷通道（图标导航） -->
+		<div class="col-xs-12 col-sm-3">
+			<div class="panel-primary" id="divChan">
+
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<span class="glyphicon glyphicon-head-right"></span>&nbsp;&nbsp;快捷通道
+					</h3>
+				</div>
+
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-xs-4 col-sm-4 col-lg-4 col-md-4">
+							<a href="#"><img src="img/" class="img-response img-thumbnail"></a>
+						</div>
+						<div class="col-xs-4 col-sm-4 col-lg-4 col-md-4">
+							<a href="#"><img src="img/" class="img-response img-thumbnail"></a>
+						</div>
+						<div class="col-xs-4 col-sm-4 col-lg-4 col-md-4">
+							<a href="#"><img src="img/" class="img-response img-thumbnail"></a>
+						</div>
+						<div class="col-xs-4 col-sm-4 col-lg-4 col-md-4">
+							<a href="#"><img src="img/" class="img-response img-thumbnail"></a>
+						</div>
+					</div>
+				</div>
+
+			
+			</div>
+		</div>
+
+
+
+
+
+	</div>
+
+
+<!-- 底部版权信息 -->
+<!-- 具体样式还需要进行进一步的设置 -->
+
+	<footer id="divFooter">
+		<div class="container">
+			<div class="row rowLinkLogo">
+
+				<div class="col-xs-3 col-sm-4 col-md-4 col-lg-4 leftLink">
+					<ul>
+						<li><a href="#">黑手党教</a></li>
+						<li><a href="#">黑手党教</a></li>
+						<li><a href="#">黑手党教</a></li>
+						<li><a href="#">黑手党教</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4 conterLogo">
+					<center>
+						<br><p>4893549<br><a href="#">jk;sdf</a></p>
+					</center>
+				</div>
+
+				<div class="col-lg-4 col-sm-4 col-md-4 col-xs-4 right">
+					<ul>
+						<li><a href="#">护肤的啊</a></li>
+						<li><a href="#">护肤的啊</a></li>
+						<li><a href="#">护肤的啊</a></li>
+						<li><a href="#">护肤的啊</a></li>
+						<li><a href="#">护肤的啊</a></li>
+					</ul>
+
+					<div class="divCopyright">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+									<center>rewerwqrewewre</center>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+
+<!-- 触发式注册页面的使用 -->
+<div class="modal fade" id="user" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<input type="button" value="&times;" class="close" data-dismiss="modal" aria-hidden="true">
+				<h4 class="modal-title">用户注册</h4>
+			</div>
+
+			<div class="modal-body">
+				<div class="row">
+					<div class="userText">用户名</div>
+					<div class="userInput">
+						<input type="text" class="form-control" name="username">
+						<p class="userNotice">djgusdfudfhdfof</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="userText">密码</div>
+					<div class="userInput">
+						<input type="text" class="form-control" name="username">
+						<p>填写密码</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal-footer">
+				<input type="submit" class="btn btn-success" value="立即注册">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>
